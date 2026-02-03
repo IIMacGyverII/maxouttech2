@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/maxouttech2/static/js/main.20d73710.js",
+    "main.js": "/maxouttech2/static/js/main.9649e0dc.js",
     "static/media/maxoutlogo2.webp": "/maxouttech2/static/media/maxoutlogo2.a5677a429c367ea10f4b.webp",
     "static/media/pattern-tree.svg": "/maxouttech2/static/media/pattern-tree.431da656681abcdffac51bee04d7f581.svg",
     "static/media/home-decor-3.jpg": "/maxouttech2/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg",
@@ -29,9 +29,9 @@
     "static/media/logo-atlassian.svg": "/maxouttech2/static/media/logo-atlassian.d92c4f81bb3efbf288b3ef71ce2fbfb0.svg",
     "static/media/logo-asana.svg": "/maxouttech2/static/media/logo-asana.5c9ced4f9006cfb2d4c10f905cf6d310.svg",
     "index.html": "/maxouttech2/index.html",
-    "main.20d73710.js.map": "/maxouttech2/static/js/main.20d73710.js.map"
+    "main.9649e0dc.js.map": "/maxouttech2/static/js/main.9649e0dc.js.map"
   },
   "entrypoints": [
-    "static/js/main.20d73710.js"
+    "static/js/main.9649e0dc.js"
   ]
 }
