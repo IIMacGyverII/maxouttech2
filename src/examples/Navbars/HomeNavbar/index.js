@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -28,24 +28,24 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Icon from "@mui/material/Icon";
 
-// Material Dashboard 2 React components
+// Material Home 2 React components
 import MDBox from "components/MDBox";
 import MDInput from "components/MDInput";
 
-// Material Dashboard 2 React example components
+// Material Home 2 React example components
 import Breadcrumbs from "examples/Breadcrumbs";
 import NotificationItem from "examples/Items/NotificationItem";
 
-// Custom styles for DashboardNavbar
+// Custom styles for HomeNavbar
 import {
   navbar,
   navbarContainer,
   navbarRow,
   navbarIconButton,
   navbarMobileMenu,
-} from "examples/Navbars/DashboardNavbar/styles";
+} from "examples/Navbars/HomeNavbar/styles";
 
-// Material Dashboard 2 React context
+// Material Home 2 React context
 import {
   useMaterialUIController,
   setTransparentNavbar,
@@ -53,7 +53,7 @@ import {
   setOpenConfigurator,
 } from "context";
 
-function DashboardNavbar({ absolute, light, isMini }) {
+function HomeNavbar({ absolute, light, isMini }) {
   const [navbarType, setNavbarType] = useState();
   const [controller, dispatch] = useMaterialUIController();
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator, darkMode } = controller;
@@ -185,18 +185,18 @@ function DashboardNavbar({ absolute, light, isMini }) {
   );
 }
 
-// Setting default values for the props of DashboardNavbar
-DashboardNavbar.defaultProps = {
+// Setting default values for the props of HomeNavbar
+HomeNavbar.defaultProps = {
   absolute: false,
   light: false,
   isMini: false,
 };
 
-// Typechecking props for the DashboardNavbar
-DashboardNavbar.propTypes = {
+// Typechecking props for the HomeNavbar
+HomeNavbar.propTypes = {
   absolute: PropTypes.bool,
   light: PropTypes.bool,
   isMini: PropTypes.bool,
 };
 
-export default DashboardNavbar;
+export default HomeNavbar;

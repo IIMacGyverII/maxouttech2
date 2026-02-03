@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -22,13 +22,13 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
-// Material Dashboard 2 React components
+// Material Home 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-// Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Material Home 2 React example components
+import HomeLayout from "examples/LayoutContainers/HomeLayout";
+import HomeNavbar from "examples/Navbars/HomeNavbar";
 import Footer from "examples/Footer";
 import ProductsInfoCard from "examples/Cards/InfoCards/ProductsInfoCard";
 import Productslist from "examples/Lists/ProductsList";
@@ -53,8 +53,8 @@ import team4 from "assets/images/team-4.jpg";
 
 function Overview() {
   return (
-    <DashboardLayout>
-      <DashboardNavbar />
+    <HomeLayout>
+      <HomeNavbar />
       <MDBox mb={2} />
       <Header>
         <MDBox pt={2} px={2} lineHeight={1.25}>
@@ -129,7 +129,7 @@ function Overview() {
         </MDBox>
       </Header>
       <Footer />
-    </DashboardLayout>
+    </HomeLayout>
   );
 }
 

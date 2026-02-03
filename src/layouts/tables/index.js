@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -17,13 +17,13 @@ Coded by www.creative-tim.com
 import Grid from "@mui/material/Grid";
 import Card from "@mui/material/Card";
 
-// Material Dashboard 2 React components
+// Material Home 2 React components
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-// Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Material Home 2 React example components
+import HomeLayout from "examples/LayoutContainers/HomeLayout";
+import HomeNavbar from "examples/Navbars/HomeNavbar";
 import Footer from "examples/Footer";
 import DataTable from "examples/Tables/DataTable";
 
@@ -36,8 +36,8 @@ function Tables() {
   const { columns: pColumns, rows: pRows } = projectsTableData();
 
   return (
-    <DashboardLayout>
-      <DashboardNavbar />
+    <HomeLayout>
+      <HomeNavbar />
       <MDBox pt={6} pb={3}>
         <Grid container spacing={6}>
           <Grid item xs={12}>
@@ -97,7 +97,7 @@ function Tables() {
         </Grid>
       </MDBox>
       <Footer />
-    </DashboardLayout>
+    </HomeLayout>
   );
 }
 

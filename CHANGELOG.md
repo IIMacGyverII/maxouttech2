@@ -58,7 +58,7 @@
 
 - Migration from Material-UI to MUI v5.
 - Migration from JSS to `styled` api, emotion and `sx` prop.
-- Product folders and files structured are updated: [README](https://github.com/creativetimofficial/material-dashboard-react/blob/main/README.md)
+- Product folders and files structured are updated: [README](https://github.com/creativetimofficial/material-home-react/blob/main/README.md)
 - New components are added
 - New example blocks are added
 - Components are Example Blocks are now totally customizable and reusable
@@ -125,12 +125,12 @@
 - Items
   - NotificationItem
 - LayoutContainers
-  - DashboardLayout
+  - HomeLayout
   - PageLayout
 - Lists
   - Productslist
 - Navbars
-  - DashboardNavbar
+  - HomeNavbar
   - DefaultNavbar
 - Sidenav
 - Tables
@@ -182,12 +182,12 @@ web-vitals
 
 ### Bug fixing
 
-- https://github.com/creativetimofficial/material-dashboard-react/issues/145 (this was solved since we've changed react-google-maps with simple Google Maps API)
-- https://github.com/creativetimofficial/material-dashboard-react/issues/140 (this was solved since we've changed react-google-maps with simple Google Maps API)
-- https://github.com/creativetimofficial/material-dashboard-react/issues/138 (can be closed since it was help wanted)
-- https://github.com/creativetimofficial/material-dashboard-react/issues/137 (user did not respond)
-- https://github.com/creativetimofficial/material-dashboard-react/issues/133 (fixed it by using `useLocation` from `react-router-dom`)
-- https://github.com/creativetimofficial/material-dashboard-react/issues/16 (please check the following page: https://demos.creative-tim.com/material-dashboard-react/#/rtl/rtl-page)
+- https://github.com/creativetimofficial/material-home-react/issues/145 (this was solved since we've changed react-google-maps with simple Google Maps API)
+- https://github.com/creativetimofficial/material-home-react/issues/140 (this was solved since we've changed react-google-maps with simple Google Maps API)
+- https://github.com/creativetimofficial/material-home-react/issues/138 (can be closed since it was help wanted)
+- https://github.com/creativetimofficial/material-home-react/issues/137 (user did not respond)
+- https://github.com/creativetimofficial/material-home-react/issues/133 (fixed it by using `useLocation` from `react-router-dom`)
+- https://github.com/creativetimofficial/material-home-react/issues/16 (please check the following page: https://demos.creative-tim.com/material-home-react/#/rtl/rtl-page)
 
 ### Major style changes
 
@@ -240,10 +240,10 @@ _You will also have the following message: `found 88 vulnerabilities (1 low, 87 
 
 ### Bug fixing
 
-- https://github.com/creativetimofficial/material-dashboard-react/issues/121
-- https://github.com/creativetimofficial/material-dashboard-react/issues/98
-- https://github.com/creativetimofficial/material-dashboard-react/pull/99
-- https://github.com/creativetimofficial/material-dashboard-react/pull/65
+- https://github.com/creativetimofficial/material-home-react/issues/121
+- https://github.com/creativetimofficial/material-home-react/issues/98
+- https://github.com/creativetimofficial/material-home-react/pull/99
+- https://github.com/creativetimofficial/material-home-react/pull/65
 
 ### Major style changes
 
@@ -294,7 +294,7 @@ _Warnings might appear while doing an npm install - they do not affect the UI or
 
 ### Major style changes
 
-- Renamed `assets/jss/material-dashboard-react/layouts/dashboardStyle.js` to `assets/jss/material-dashboard-react/layouts/adminStyle.js`
+- Renamed `assets/jss/material-home-react/layouts/homeStyle.js` to `assets/jss/material-home-react/layouts/adminStyle.js`
 
 ### Deleted components
 
@@ -337,7 +337,7 @@ typescript                3.5.1   →    3.5.3
 - Changed all string refs to `React.createRef()`
 - Added types validation in each component
 - Solved linting issues
-- Solved https://github.com/creativetimofficial/material-dashboard-react/issues/83
+- Solved https://github.com/creativetimofficial/material-home-react/issues/83
 
 ### Major style changes
 
@@ -375,15 +375,15 @@ ajv                        6.9.1   →   6.10.0
 
 ### Nice stuff
 
-- [Added RTL support](https://github.com/creativetimofficial/material-dashboard-react/issues/16)
+- [Added RTL support](https://github.com/creativetimofficial/material-home-react/issues/16)
 
 ### Bug Fixing
 
-- [Added new script for npm](https://github.com/creativetimofficial/material-dashboard-react/issues/69)
-- Changed our buggy routing system, now it should work flawlessly, for more info, please refer to our [live docs here](https://demos.creative-tim.com/material-dashboard-react/#/documentation/routing-system)
-- [https://github.com/creativetimofficial/material-dashboard-react/issues/67](https://github.com/creativetimofficial/material-dashboard-react/issues/67)
-- [https://github.com/creativetimofficial/material-dashboard-react/issues/68](https://github.com/creativetimofficial/material-dashboard-react/issues/68)
-- [https://github.com/creativetimofficial/material-dashboard-react/issues/66](https://github.com/creativetimofficial/material-dashboard-react/issues/66)
+- [Added new script for npm](https://github.com/creativetimofficial/material-home-react/issues/69)
+- Changed our buggy routing system, now it should work flawlessly, for more info, please refer to our [live docs here](https://demos.creative-tim.com/material-home-react/#/documentation/routing-system)
+- [https://github.com/creativetimofficial/material-home-react/issues/67](https://github.com/creativetimofficial/material-home-react/issues/67)
+- [https://github.com/creativetimofficial/material-home-react/issues/68](https://github.com/creativetimofficial/material-home-react/issues/68)
+- [https://github.com/creativetimofficial/material-home-react/issues/66](https://github.com/creativetimofficial/material-home-react/issues/66)
 
 ### Major style changes
 
@@ -405,14 +405,14 @@ ajv                        6.9.1   →   6.10.0
 
 - **src/components/FixedPlugin/FixedPlugin.jsx**(Left menu used by us for customization - due to this, we've had to add a link for the fonts awesome cdn)
 - **src/components/Header/RTLHeaderLinks.jsx**
-- **src/layouts/Admin.jsx** (instead of Dashboard)
+- **src/layouts/Admin.jsx** (instead of Home)
 - **src/layouts/RTL.jsx**
 - **src/views/RTLPage/RTLPage.jsx**
 
 ### Deleted components
 
-- **src/layouts/Dashboard/Dashboard.jsx** (renamed to Admin)
-- **src/routes/dashboard.jsx**
+- **src/layouts/Home/Home.jsx** (renamed to Admin)
+- **src/routes/home.jsx**
 - **src/routes/index.jsx**
 
 ### Deleted dependencies
@@ -452,10 +452,10 @@ ajv                        6.9.1   →   6.10.0
 
 ### Major style changes
 
-- `src/assets/jss/material-dashboard-react/components/tasksStyle.jsx`
-- `src/assets/jss/material-dashboard-react/checkboxAdnRadioStyle.jsx`
-- `src/assets/jss/material-dashboard-react/components/customTabsStyle.jsx`
-- `src/assets/jss/material-dashboard-react/components/snackbarContentStyle.jsx`
+- `src/assets/jss/material-home-react/components/tasksStyle.jsx`
+- `src/assets/jss/material-home-react/checkboxAdnRadioStyle.jsx`
+- `src/assets/jss/material-home-react/components/customTabsStyle.jsx`
+- `src/assets/jss/material-home-react/components/snackbarContentStyle.jsx`
 
 ### Deleted dependencies
 
@@ -482,13 +482,13 @@ ajv                        6.9.1   →   6.10.0
 ### Bug Fixing
 
 - Github solved issues:
-  - `https://github.com/creativetimofficial/material-dashboard-react/issues/58`
+  - `https://github.com/creativetimofficial/material-home-react/issues/58`
 - Changed the `GridContainer` component
 
 ### Major style changes
 
-- `src/assets/jss/material-dashboard-react/components/footerStyle.jsx`
-- `src/assets/jss/material-dashboard-react/components/headerStyle.jsx`
+- `src/assets/jss/material-home-react/components/footerStyle.jsx`
+- `src/assets/jss/material-home-react/components/headerStyle.jsx`
 
 ### Added dependencies
 
@@ -503,29 +503,29 @@ ajv                        6.9.1   →   6.10.0
 
 ### Bug Fixing
 
-- Added resize event listener for window ([see this issue here](https://github.com/creativetimofficial/ct-material-dashboard-pro-react/issues/40#issuecomment-406983150))
+- Added resize event listener for window ([see this issue here](https://github.com/creativetimofficial/ct-material-home-pro-react/issues/40#issuecomment-406983150))
 - Added issues template file
 - Github solved issues:
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/49 (dropped `react-popper` in favour of `@material-ui/core/Popper`)
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/47
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/45
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/38
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/37
+  - https://github.com/creativetimofficial/material-home-react/issues/49 (dropped `react-popper` in favour of `@material-ui/core/Popper`)
+  - https://github.com/creativetimofficial/material-home-react/issues/47
+  - https://github.com/creativetimofficial/material-home-react/issues/45
+  - https://github.com/creativetimofficial/material-home-react/issues/38
+  - https://github.com/creativetimofficial/material-home-react/issues/37
 - Github enhancement issues:
-  - https://github.com/creativetimofficial/material-dashboard-react/issues/47 (read the [./README.md](./README.md) file)
+  - https://github.com/creativetimofficial/material-home-react/issues/47 (read the [./README.md](./README.md) file)
 
 ### Major style changes
 
 - Added styles for `svg`'s, **font-awesome** classes and `.material-icons` class inside
-  - `src/assets/jss/material-dashboard-react/views/dashboardStyle.jsx`
-  - `src/assets/jss/material-dashboard-react/components/buttonStyle.jsx`
-  - `src/assets/jss/material-dashboard-react/components/cardFooterStyle.jsx`
-  - `src/assets/jss/material-dashboard-react/components/cardHeaderStyle.jsx`
-  - `src/assets/jss/material-dashboard-react/components/headerLinksStyle.jsx`
-  - `src/assets/jss/material-dashboard-react/components/customTabsStyle.jsx`
+  - `src/assets/jss/material-home-react/views/homeStyle.jsx`
+  - `src/assets/jss/material-home-react/components/buttonStyle.jsx`
+  - `src/assets/jss/material-home-react/components/cardFooterStyle.jsx`
+  - `src/assets/jss/material-home-react/components/cardHeaderStyle.jsx`
+  - `src/assets/jss/material-home-react/components/headerLinksStyle.jsx`
+  - `src/assets/jss/material-home-react/components/customTabsStyle.jsx`
 - Others
-  - `src/assets/jss/material-dashboard-react/tooltipStyle.jsx`
-  - `src/assets/jss/material-dashboard-react/dropdownStyle.jsx`
+  - `src/assets/jss/material-home-react/tooltipStyle.jsx`
+  - `src/assets/jss/material-home-react/dropdownStyle.jsx`
 
 ### Dropped components
 
@@ -559,9 +559,9 @@ ajv                        6.9.1   →   6.10.0
 
 ### Major style changes
 
-- Moved the styles of `src/components/` inside `src/assets/jss/material-dashboard-react/components/`
-- Moved the styles of `src/layouts/` inside `src/assets/jss/material-dashboard-react/layouts/`
-- Moved the styles of `src/views/` inside `src/assets/jss/material-dashboard-react/views/`
+- Moved the styles of `src/components/` inside `src/assets/jss/material-home-react/components/`
+- Moved the styles of `src/layouts/` inside `src/assets/jss/material-home-react/layouts/`
+- Moved the styles of `src/views/` inside `src/assets/jss/material-home-react/views/`
 - Almost all styles have been changed more or less
 
 ### Dropped components
@@ -616,9 +616,9 @@ ajv                        6.9.1   →   6.10.0
 
 ### Bug Fixing
 
-- Renamed `src/containers/App/App.jsx` to `src/layouts/Dashboard/Dashboard.jsx`
-- Renamed `src/variables/styles.jsx` to `src/assets/jss/material-dashboard-react.jsx`
-- Moved all the files from `src/variables/styles/` to `src/assets/jss/material-dashboard-react/`
+- Renamed `src/containers/App/App.jsx` to `src/layouts/Home/Home.jsx`
+- Renamed `src/variables/styles.jsx` to `src/assets/jss/material-home-react.jsx`
+- Moved all the files from `src/variables/styles/` to `src/assets/jss/material-home-react/`
 - Changes caused by the upgrade of `material-ui`
 - Small bug fixing
 
@@ -653,4 +653,4 @@ ajv                        6.9.1   →   6.10.0
 ### Original Release
 
 - Added Material-UI as base framework
-- Added design from Material Dashboard by Creative Tim
+- Added design from Material Home by Creative Tim

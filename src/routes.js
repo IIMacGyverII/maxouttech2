@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,7 +14,7 @@ Coded by www.creative-tim.com
 */
 
 /** 
-  All of the routes for the Material Dashboard 2 React are added here,
+  All of the routes for the Material Home 2 React are added here,
   You can add a new route, customize the routes and delete the routes here.
 
   Once you add a new route on this file it will be visible automatically on
@@ -35,8 +35,8 @@ Coded by www.creative-tim.com
   10. The `component` key is used to store the component of its route.
 */
 
-// Material Dashboard 2 React layouts
-import Dashboard from "layouts/dashboard";
+// Material Home 2 React layouts
+import Home from "layouts/home";
 import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
@@ -51,11 +51,11 @@ import Icon from "@mui/material/Icon";
 const routes = [
   {
     type: "collapse",
-    name: "Dashboard",
-    key: "dashboard",
-    icon: <Icon fontSize="small">dashboard</Icon>,
-    route: "/dashboard",
-    component: <Dashboard />,
+    name: "Home",
+    key: "home",
+    icon: <Icon fontSize="small">home</Icon>,
+    route: "/home",
+    component: <Home />,
   },
   {
     type: "collapse",

@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,9 +14,9 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base colors for the Material Dashboard 2 React.
+ * The base colors for the Material Home 2 React.
  * You can add new color using this file.
- * You can customized the colors for the entire Material Dashboard 2 React using thie file.
+ * You can customized the colors for the entire Material Home 2 React using thie file.
  */
 
 const colors = {

@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -16,31 +16,31 @@ Coded by www.creative-tim.com
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Dashboard 2 React components
+// Material Home 2 React components
 import MDBox from "components/MDBox";
 
-// Material Dashboard 2 React example components
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Material Home 2 React example components
+import HomeLayout from "examples/LayoutContainers/HomeLayout";
+import HomeNavbar from "examples/Navbars/HomeNavbar";
 import Footer from "examples/Footer";
 import ReportsBarChart from "examples/Charts/BarCharts/ReportsBarChart";
 import ReportsLineChart from "examples/Charts/LineCharts/ReportsLineChart";
 import ComplexStatisticsCard from "examples/Cards/StatisticsCards/ComplexStatisticsCard";
 
 // Data
-import reportsBarChartData from "layouts/dashboard/data/reportsBarChartData";
-import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
+import reportsBarChartData from "layouts/home/data/reportsBarChartData";
+import reportsLineChartData from "layouts/home/data/reportsLineChartData";
 
-// Dashboard components
-import Projects from "layouts/dashboard/components/Projects";
-import OrdersOverview from "layouts/dashboard/components/OrdersOverview";
+// Home components
+import Projects from "layouts/home/components/Projects";
+import OrdersOverview from "layouts/home/components/OrdersOverview";
 
-function Dashboard() {
+function Home() {
   const { sales, tasks } = reportsLineChartData;
 
   return (
-    <DashboardLayout>
-      <DashboardNavbar />
+    <HomeLayout>
+      <HomeNavbar />
       <MDBox py={3}>
         <Grid container spacing={3}>
           <Grid item xs={12} md={6} lg={3}>
@@ -156,8 +156,8 @@ function Dashboard() {
         </MDBox>
       </MDBox>
       <Footer />
-    </DashboardLayout>
+    </HomeLayout>
   );
 }
 
-export default Dashboard;
+export default Home;

@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -16,12 +16,12 @@ Coded by www.creative-tim.com
 // @mui material components
 import Grid from "@mui/material/Grid";
 
-// Material Dashboard 2 React components
+// Material Home 2 React components
 import MDBox from "components/MDBox";
 
-// Material Dashboard 2 React examples
-import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
-import DashboardNavbar from "examples/Navbars/DashboardNavbar";
+// Material Home 2 React examples
+import HomeLayout from "examples/LayoutContainers/HomeLayout";
+import HomeNavbar from "examples/Navbars/HomeNavbar";
 import Footer from "examples/Footer";
 import MasterCard from "examples/Cards/MasterCard";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
@@ -34,8 +34,8 @@ import Transactions from "layouts/billing/components/Transactions";
 
 function Billing() {
   return (
-    <DashboardLayout>
-      <DashboardNavbar absolute isMini />
+    <HomeLayout>
+      <HomeNavbar absolute isMini />
       <MDBox mt={8}>
         <MDBox mb={3}>
           <Grid container spacing={3}>
@@ -82,7 +82,7 @@ function Billing() {
         </MDBox>
       </MDBox>
       <Footer />
-    </DashboardLayout>
+    </HomeLayout>
   );
 }
 

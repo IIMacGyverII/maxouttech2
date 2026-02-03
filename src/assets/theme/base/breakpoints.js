@@ -1,9 +1,9 @@
 /**
 =========================================================
-* Material Dashboard 2 React - v2.2.0
+* Material Home 2 React - v2.2.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/material-dashboard-react
+* Product Page: https://www.creative-tim.com/product/material-home-react
 * Copyright 2023 Creative Tim (https://www.creative-tim.com)
 
 Coded by www.creative-tim.com
@@ -14,9 +14,9 @@ Coded by www.creative-tim.com
 */
 
 /**
- * The base breakpoints for the Material Dashboard 2 React.
+ * The base breakpoints for the Material Home 2 React.
  * You can add new breakpoints using this file.
- * You can customized the breakpoints for the entire Material Dashboard 2 React using thie file.
+ * You can customized the breakpoints for the entire Material Home 2 React using thie file.
  */
 
 const breakpoints = {
