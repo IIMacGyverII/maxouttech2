@@ -30,16 +30,16 @@ import MDTypography from "components/MDTypography";
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import DashboardNavbar from "examples/Navbars/DashboardNavbar";
 import Footer from "examples/Footer";
-import ProfileInfoCard from "examples/Cards/InfoCards/ProfileInfoCard";
-import ProfilesList from "examples/Lists/ProfilesList";
+import ProductsInfoCard from "examples/Cards/InfoCards/ProductsInfoCard";
+import Productslist from "examples/Lists/ProductsList";
 import DefaultProjectCard from "examples/Cards/ProjectCards/DefaultProjectCard";
 
 // Overview page components
-import Header from "layouts/profile/components/Header";
-import PlatformSettings from "layouts/profile/components/PlatformSettings";
+import Header from "layouts/products/components/Header";
+import PlatformSettings from "layouts/products/components/PlatformSettings";
 
 // Data
-import profilesListData from "layouts/profile/data/profilesListData";
+import ProductsListData from "layouts/products/data/ProductsListData";
 
 // Images
 import homeDecor1 from "assets/images/home-decor-1.jpg";
@@ -77,7 +77,7 @@ function Overview() {
                 description="As Uber works through a huge amount of internal management turmoil."
                 action={{
                   type: "internal",
-                  route: "/pages/profile/profile-overview",
+                  route: "/pages/products/products-overview",
                   color: "info",
                   label: "view project",
                 }}
@@ -91,7 +91,7 @@ function Overview() {
                 description="Music is something that everyone has their own specific opinion about."
                 action={{
                   type: "internal",
-                  route: "/pages/profile/profile-overview",
+                  route: "/pages/products/products-overview",
                   color: "info",
                   label: "view project",
                 }}
@@ -105,7 +105,7 @@ function Overview() {
                 description="Different people have different taste, and various types of music."
                 action={{
                   type: "internal",
-                  route: "/pages/profile/profile-overview",
+                  route: "/pages/products/products-overview",
                   color: "info",
                   label: "view project",
                 }}
@@ -119,7 +119,7 @@ function Overview() {
                 description="Why would anyone pick blue over pink? Pink is obviously a better color."
                 action={{
                   type: "internal",
-                  route: "/pages/profile/profile-overview",
+                  route: "/pages/products/products-overview",
                   color: "info",
                   label: "view project",
                 }}

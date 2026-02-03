@@ -27,7 +27,7 @@ export default [
     description: "Hi! I need more information..",
     action: {
       type: "internal",
-      route: "/pages/profile/profile-overview",
+      route: "/pages/products/products-overview",
       color: "info",
       label: "reply",
     },
@@ -38,7 +38,7 @@ export default [
     description: "Awesome work, can you..",
     action: {
       type: "internal",
-      route: "/pages/profile/profile-overview",
+      route: "/pages/products/products-overview",
       color: "info",
       label: "reply",
     },
@@ -49,7 +49,7 @@ export default [
     description: "About files I can..",
     action: {
       type: "internal",
-      route: "/pages/profile/profile-overview",
+      route: "/pages/products/products-overview",
       color: "info",
       label: "reply",
     },
@@ -60,7 +60,7 @@ export default [
     description: "Have a great afternoon..",
     action: {
       type: "internal",
-      route: "/pages/profile/profile-overview",
+      route: "/pages/products/products-overview",
       color: "info",
       label: "reply",
     },
@@ -71,7 +71,7 @@ export default [
     description: "Hi! I need more information..",
     action: {
       type: "internal",
-      route: "/pages/profile/profile-overview",
+      route: "/pages/products/products-overview",
       color: "info",
       label: "reply",
     },

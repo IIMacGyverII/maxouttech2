@@ -41,7 +41,7 @@ import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
-import Profile from "layouts/profile";
+import Products from "layouts/products";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
@@ -92,10 +92,10 @@ const routes = [
   {
     type: "collapse",
     name: "Products",
-    key: "profile",
+    key: "products",
     icon: <Icon fontSize="small">person</Icon>,
-    route: "/profile",
-    component: <Profile />,
+    route: "/products",
+    component: <Products />,
   },
   {
     type: "collapse",

@@ -72,7 +72,7 @@
 - Footer.js
 - MapExample.js
 - PageVisitsCard.js
-- ProfileCard.js
+- ProductsCard.js
 - SettingsForm.js
 - Sidebar.js
 - StatusCard.js
@@ -97,7 +97,7 @@
     - SimpleBlogCard
   - InfoCards
     - DefaultInfoCard
-    - ProfileInfoCard
+    - ProductsInfoCard
   - MasterCard
   - ProjectCards
     - DefaultProjectCard
@@ -128,7 +128,7 @@
   - DashboardLayout
   - PageLayout
 - Lists
-  - ProfilesList
+  - Productslist
 - Navbars
   - DashboardNavbar
   - DefaultNavbar
@@ -573,7 +573,7 @@ ajv                        6.9.1   →   6.10.0
   - `src/components/Typography/Small.jsx`
 - All the cards from `src/components/Cards`
   - `src/components/Cards/ChartCard.jsx`
-  - `src/components/Cards/ProfileCard.jsx`
+  - `src/components/Cards/ProductsCard.jsx`
   - `src/components/Cards/RegularCard.jsx`
   - `src/components/Cards/StatsCard.jsx`
   - `src/components/Cards/TasksCard.jsx`
