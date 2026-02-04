@@ -32,65 +32,57 @@ import authorsTableData from "layouts/aboutus/data/authorsTableData";
 import projectsTableData from "layouts/aboutus/data/projectsTableData";
 
 function AboutUs() {
-  const { columns, rows } = authorsTableData();
-  const { columns: pColumns, rows: pRows } = projectsTableData();
-
   return (
     <HomeLayout>
       <HomeNavbar />
       <MDBox pt={6} pb={3}>
-        <Grid container spacing={6}>
-          <Grid item xs={12}>
+        <Grid container spacing={6} justifyContent="center">
+          <Grid item xs={12} md={8}>
             <Card>
-              <MDBox
-                mx={2}
-                mt={-3}
-                py={3}
-                px={2}
-                variant="gradient"
-                bgColor="info"
-                borderRadius="lg"
-                coloredShadow="info"
-              >
-                <MDTypography variant="h6" color="white">
-                  Authors Table
+              <MDBox px={4} py={5}>
+                <MDTypography variant="h3" mb={2} fontWeight="bold" color="info.main">
+                  About Us
                 </MDTypography>
-              </MDBox>
-              <MDBox pt={3}>
-                <DataTable
-                  table={{ columns, rows }}
-                  isSorted={false}
-                  entriesPerPage={false}
-                  showTotalEntries={false}
-                  noEndBorder
-                />
-              </MDBox>
-            </Card>
-          </Grid>
-          <Grid item xs={12}>
-            <Card>
-              <MDBox
-                mx={2}
-                mt={-3}
-                py={3}
-                px={2}
-                variant="gradient"
-                bgColor="info"
-                borderRadius="lg"
-                coloredShadow="info"
-              >
-                <MDTypography variant="h6" color="white">
-                  Projects Table
+                <MDTypography variant="body1" mb={2}>
+                  <b>MaxOut™ Technology</b> is a leading innovator in wireless security and
+                  life-safety solutions. Since our founding, we have been dedicated to delivering
+                  maximum range, reliability, and ease of installation for professional security
+                  dealers, installers, and end-users.
                 </MDTypography>
-              </MDBox>
-              <MDBox pt={3}>
-                <DataTable
-                  table={{ columns: pColumns, rows: pRows }}
-                  isSorted={false}
-                  entriesPerPage={false}
-                  showTotalEntries={false}
-                  noEndBorder
-                />
+                <MDTypography variant="body1" mb={2}>
+                  <b>Our Mission:</b> To empower our customers with cutting-edge wireless sensor
+                  technology that ensures safety, security, and peace of mind in every environment.
+                </MDTypography>
+                <MDTypography variant="body1" mb={2}>
+                  <b>What We Offer:</b> Our product line includes door/window sensors, shock
+                  sensors, smoke/heat/CO detectors, PIR motion detectors, glass break sensors, water
+                  sensors, keyfobs, panic buttons, and more—engineered for seamless compatibility
+                  with leading security panels including UTC®, Interlogix®, GE®, Honeywell®, 2GIG®,
+                  DSC®, and Qolsys®.
+                </MDTypography>
+                <MDTypography variant="body1" mb={2}>
+                  <b>Why Choose MaxOut™?</b>
+                  <ul style={{ margin: "16px 0 0 24px" }}>
+                    <li>Maximum wireless range and reliability</li>
+                    <li>Easy installation and programming</li>
+                    <li>Comprehensive technical support and documentation</li>
+                    <li>Commitment to quality and customer satisfaction</li>
+                  </ul>
+                </MDTypography>
+                <MDTypography variant="body1" mb={2}>
+                  <b>Contact Us:</b> <br />
+                  12075 43rd Street NE, Suite 500, St. Michael, MN 55376 <br />
+                  <b>W:</b> MaxOutTech.com &nbsp; <b>P:</b> 763-497-1059 &nbsp; <b>E:</b>{" "}
+                  <a
+                    href="mailto:Info@MaxOutTech.com"
+                    style={{ color: "#1976d2", textDecoration: "none" }}
+                  >
+                    Info@MaxOutTech.com
+                  </a>
+                </MDTypography>
+                <MDTypography variant="body1">
+                  <b>MaxOut™ Technology: Maximum Range. Maximum Reliability.</b>
+                </MDTypography>
               </MDBox>
             </Card>
           </Grid>

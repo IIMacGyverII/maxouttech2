@@ -61,8 +61,10 @@ function Footer({ company, links }) {
         px={1.5}
       >
         &copy;2018 MaxOutTM Technology. 12075 43rd Street NE, Suite: 500, St. Michael, MN 55376 |
-        MaxOutTech.com | P: 763-497-1059 | E: Info@MaxOutTech.com MaxOutTech.com | P: 763-497-1059 |
-        E: Info@MaxOutTech.com
+        MaxOutTech.com | P: 763-497-1059 | E:{" "}
+        <a href="mailto:Info@MaxOutTech.com" style={{ color: "#1976d2", textDecoration: "none" }}>
+          Info@MaxOutTech.com
+        </a>
       </MDBox>
       <MDBox
         component="ul"
