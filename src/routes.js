@@ -59,11 +59,19 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
+    name: "About Us",
     key: "tables",
     icon: <Icon fontSize="small">table_view</Icon>,
     route: "/tables",
     component: <Tables />,
+  },
+  {
+    type: "collapse",
+    name: "Products",
+    key: "products",
+    icon: <Icon fontSize="small">person</Icon>,
+    route: "/products",
+    component: <Products />,
   },
   {
     type: "collapse",
@@ -88,14 +96,6 @@ const routes = [
     icon: <Icon fontSize="small">notifications</Icon>,
     route: "/notifications",
     component: <Notifications />,
-  },
-  {
-    type: "collapse",
-    name: "Products",
-    key: "products",
-    icon: <Icon fontSize="small">person</Icon>,
-    route: "/products",
-    component: <Products />,
   },
   {
     type: "collapse",
