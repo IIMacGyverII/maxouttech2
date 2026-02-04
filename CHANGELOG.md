@@ -133,7 +133,7 @@
   - HomeNavbar
   - DefaultNavbar
 - Sidenav
-- Tables
+- AboutUs
   - DataTable
 - Timeline
   - TimelineList

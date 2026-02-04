@@ -37,7 +37,7 @@ Coded by www.creative-tim.com
 
 // Material Home 2 React layouts
 import Home from "layouts/home";
-import Tables from "layouts/tables";
+import AboutUs from "layouts/aboutus";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
@@ -60,10 +60,10 @@ const routes = [
   {
     type: "collapse",
     name: "About Us",
-    key: "tables",
+    key: "aboutus",
     icon: <Icon fontSize="small">table_view</Icon>,
-    route: "/tables",
-    component: <Tables />,
+    route: "/aboutus",
+    component: <AboutUs />,
   },
   {
     type: "collapse",

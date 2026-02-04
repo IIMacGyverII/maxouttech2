@@ -25,13 +25,13 @@ import MDTypography from "components/MDTypography";
 import HomeLayout from "examples/LayoutContainers/HomeLayout";
 import HomeNavbar from "examples/Navbars/HomeNavbar";
 import Footer from "examples/Footer";
-import DataTable from "examples/Tables/DataTable";
+import DataTable from "examples/AboutUs/DataTable";
 
 // Data
-import authorsTableData from "layouts/tables/data/authorsTableData";
-import projectsTableData from "layouts/tables/data/projectsTableData";
+import authorsTableData from "layouts/aboutus/data/authorsTableData";
+import projectsTableData from "layouts/aboutus/data/projectsTableData";
 
-function Tables() {
+function AboutUs() {
   const { columns, rows } = authorsTableData();
   const { columns: pColumns, rows: pRows } = projectsTableData();
 
@@ -101,4 +101,4 @@ function Tables() {
   );
 }
 
-export default Tables;
+export default AboutUs;

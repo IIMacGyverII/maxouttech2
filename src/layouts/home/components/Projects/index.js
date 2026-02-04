@@ -26,7 +26,7 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
 // Material Home 2 React examples
-import DataTable from "examples/Tables/DataTable";
+import DataTable from "examples/AboutUs/DataTable";
 
 // Data
 import data from "layouts/home/components/Projects/data";

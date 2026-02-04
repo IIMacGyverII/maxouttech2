@@ -30,6 +30,14 @@ import MDTypography from "components/MDTypography";
 function Breadcrumbs({ icon, title, route, light }) {
   const routes = route.slice(0, -1);
 
+  // Format title: replace hyphens with spaces and handle special cases
+  const formatTitle = (str) => {
+    return str
+      .replace("-", " ")
+      .replace("aboutus", "About Us")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   return (
     <MDBox mr={{ xs: 0, xl: 8 }}>
       <MuiBreadcrumbs
@@ -72,7 +80,7 @@ function Breadcrumbs({ icon, title, route, light }) {
           color={light ? "white" : "dark"}
           sx={{ lineHeight: 0 }}
         >
-          {title.replace("-", " ")}
+          {formatTitle(title)}
         </MDTypography>
       </MuiBreadcrumbs>
       <MDTypography
@@ -82,7 +90,7 @@ function Breadcrumbs({ icon, title, route, light }) {
         color={light ? "white" : "dark"}
         noWrap
       >
-        {title.replace("-", " ")}
+        {formatTitle(title)}
       </MDTypography>
     </MDBox>
   );
