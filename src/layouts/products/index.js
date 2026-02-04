@@ -43,6 +43,7 @@ import ProductsListData from "layouts/products/data/ProductsListData";
 
 // Images
 import homeDecor1 from "assets/images/home-decor-1.jpg";
+import { useState } from "react";
 import homeDecor2 from "assets/images/home-decor-2.jpg";
 import homeDecor3 from "assets/images/home-decor-3.jpg";
 import homeDecor4 from "assets/images/home-decor-4.jpeg";
@@ -52,9 +53,20 @@ import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
 
 function Overview() {
+  const [search, setSearch] = useState("");
+  // Filter products by name or description
+  const filteredProducts = ProductsListData.filter(
+    (product) =>
+      product.name.toLowerCase().includes(search.toLowerCase()) ||
+      product.description.toLowerCase().includes(search.toLowerCase())
+  );
+
+  // Get all product names for autocomplete
+  const productNames = ProductsListData.map((product) => product.name);
+
   return (
     <HomeLayout>
-      <HomeNavbar />
+      <HomeNavbar onSearchChange={setSearch} productNames={productNames} />
       <MDBox mb={2} />
       <Header>
         <MDBox pt={2} px={2} lineHeight={1.25}>
@@ -126,6 +138,10 @@ function Overview() {
               />
             </Grid>
           </Grid>
+        </MDBox>
+        {/* Product search results */}
+        <MDBox mt={4}>
+          <Productslist title="Products" productss={filteredProducts} />
         </MDBox>
       </Header>
       <Footer />

@@ -53,12 +53,34 @@ import {
   setOpenConfigurator,
 } from "context";
 
-function HomeNavbar({ absolute, light, isMini }) {
+function HomeNavbar({ absolute, light, isMini, onSearchChange, productNames }) {
   const [navbarType, setNavbarType] = useState();
   const [controller, dispatch] = useMaterialUIController();
   const { miniSidenav, transparentNavbar, fixedNavbar, openConfigurator, darkMode } = controller;
   const [openMenu, setOpenMenu] = useState(false);
   const route = useLocation().pathname.split("/").slice(1);
+  const [search, setSearch] = useState("");
+  const [showSuggestions, setShowSuggestions] = useState(false);
+  const [filteredSuggestions, setFilteredSuggestions] = useState([]);
+
+  // If a search handler is provided, call it on change
+  const handleSearchChange = (e) => {
+    const value = e.target.value;
+    setSearch(value);
+    if (typeof onSearchChange === "function") {
+      onSearchChange(value);
+    }
+    // Autocomplete logic
+    if (productNames && value) {
+      const suggestions = productNames.filter((name) =>
+        name.toLowerCase().includes(value.toLowerCase())
+      );
+      setFilteredSuggestions(suggestions.slice(0, 5));
+      setShowSuggestions(true);
+    } else {
+      setShowSuggestions(false);
+    }
+  };
 
   useEffect(() => {
     // Setting the navbar type
@@ -135,8 +157,48 @@ function HomeNavbar({ absolute, light, isMini }) {
         </MDBox>
         {isMini ? null : (
           <MDBox sx={(theme) => navbarRow(theme, { isMini })}>
-            <MDBox pr={1}>
-              <MDInput label="Search here" />
+            <MDBox pr={1} position="relative">
+              <MDInput
+                label="Search here"
+                value={search}
+                onChange={handleSearchChange}
+                autoComplete="off"
+                onBlur={() => setTimeout(() => setShowSuggestions(false), 100)}
+                onFocus={() => search && setShowSuggestions(true)}
+              />
+              {showSuggestions && filteredSuggestions.length > 0 && (
+                <MDBox
+                  sx={{
+                    position: "absolute",
+                    top: "100%",
+                    left: 0,
+                    right: 0,
+                    zIndex: 10,
+                    background: "white",
+                    boxShadow: 2,
+                    borderRadius: 1,
+                    mt: 1,
+                  }}
+                >
+                  {filteredSuggestions.map((suggestion) => (
+                    <MDBox
+                      key={suggestion}
+                      px={2}
+                      py={1}
+                      sx={{ cursor: "pointer", "&:hover": { background: "#eee" } }}
+                      onMouseDown={() => {
+                        setSearch(suggestion);
+                        if (typeof onSearchChange === "function") {
+                          onSearchChange(suggestion);
+                        }
+                        setShowSuggestions(false);
+                      }}
+                    >
+                      {suggestion}
+                    </MDBox>
+                  ))}
+                </MDBox>
+              )}
             </MDBox>
             <MDBox color={light ? "white" : "inherit"}>
               <Link to="/authentication/sign-in/basic">
@@ -190,6 +252,8 @@ HomeNavbar.defaultProps = {
   absolute: false,
   light: false,
   isMini: false,
+  onSearchChange: undefined,
+  productNames: [],
 };
 
 // Typechecking props for the HomeNavbar
@@ -197,6 +261,8 @@ HomeNavbar.propTypes = {
   absolute: PropTypes.bool,
   light: PropTypes.bool,
   isMini: PropTypes.bool,
+  onSearchChange: PropTypes.func,
+  productNames: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default HomeNavbar;

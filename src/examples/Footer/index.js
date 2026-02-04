@@ -60,7 +60,9 @@ function Footer({ company, links }) {
         fontSize={size.sm}
         px={1.5}
       >
-        &copy; 2026 Maxout Technology
+        &copy;2018 MaxOutTM Technology. 12075 43rd Street NE, Suite: 500, St. Michael, MN 55376 |
+        MaxOutTech.com | P: 763-497-1059 | E: Info@MaxOutTech.com MaxOutTech.com | P: 763-497-1059 |
+        E: Info@MaxOutTech.com
       </MDBox>
       <MDBox
         component="ul"

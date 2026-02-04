@@ -45,6 +45,7 @@ import LineCard from "layouts/linecard";
 import WhereToBuy from "layouts/wheretobuy";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
+import Documentation from "layouts/documentation";
 
 // @mui icons
 import Icon from "@mui/material/Icon";
@@ -98,6 +99,14 @@ const routes = [
     icon: <Icon fontSize="small">grid_view</Icon>,
     route: "/line-card",
     component: <LineCard />,
+  },
+  {
+    type: "collapse",
+    name: "Documentation",
+    key: "documentation",
+    icon: <Icon fontSize="small">menu_book</Icon>,
+    route: "/documentation",
+    component: <Documentation />,
   },
 
   {
