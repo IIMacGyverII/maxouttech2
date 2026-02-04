@@ -20,15 +20,15 @@ import Card from "@mui/material/Card";
 import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 
-// Billing page components
-import Bill from "layouts/billing/components/Bill";
+// Wireless page components
+import Bill from "layouts/wireless/components/Bill";
 
-function BillingInformation() {
+function WirelessInformation() {
   return (
     <Card id="delete-account">
       <MDBox pt={3} px={2}>
         <MDTypography variant="h6" fontWeight="medium">
-          Billing Information
+          Wireless Information
         </MDTypography>
       </MDBox>
       <MDBox pt={1} pb={2} px={2}>
@@ -58,4 +58,4 @@ function BillingInformation() {
   );
 }
 
-export default BillingInformation;
+export default WirelessInformation;

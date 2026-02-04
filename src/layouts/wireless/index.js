@@ -26,13 +26,13 @@ import Footer from "examples/Footer";
 import MasterCard from "examples/Cards/MasterCard";
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
-// Billing page components
-import PaymentMethod from "layouts/billing/components/PaymentMethod";
-import Invoices from "layouts/billing/components/Invoices";
-import BillingInformation from "layouts/billing/components/BillingInformation";
-import Transactions from "layouts/billing/components/Transactions";
+// Wireless page components
+import PaymentMethod from "layouts/wireless/components/PaymentMethod";
+import Invoices from "layouts/wireless/components/Invoices";
+import WirelessInformation from "layouts/wireless/components/WirelessInformation";
+import Transactions from "layouts/wireless/components/Transactions";
 
-function Billing() {
+function Wireless() {
   return (
     <HomeLayout>
       <HomeNavbar absolute isMini />
@@ -73,7 +73,7 @@ function Billing() {
         <MDBox mb={3}>
           <Grid container spacing={3}>
             <Grid item xs={12} md={7}>
-              <BillingInformation />
+              <WirelessInformation />
             </Grid>
             <Grid item xs={12} md={5}>
               <Transactions />
@@ -86,4 +86,4 @@ function Billing() {
   );
 }
 
-export default Billing;
+export default Wireless;

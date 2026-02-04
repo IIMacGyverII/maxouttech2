@@ -38,7 +38,7 @@ Coded by www.creative-tim.com
 // Material Home 2 React layouts
 import Home from "layouts/home";
 import AboutUs from "layouts/aboutus";
-import Billing from "layouts/billing";
+import Wireless from "layouts/wireless";
 import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
 import Products from "layouts/products";
@@ -75,11 +75,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Billing",
-    key: "billing",
+    name: "Wireless",
+    key: "wireless",
     icon: <Icon fontSize="small">receipt_long</Icon>,
-    route: "/billing",
-    component: <Billing />,
+    route: "/wireless",
+    component: <Wireless />,
   },
   {
     type: "collapse",
