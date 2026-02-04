@@ -32,6 +32,7 @@ function Breadcrumbs({ icon, title, route, light }) {
 
   // Format title: replace hyphens with spaces and handle special cases
   const formatTitle = (str) => {
+    if (str.toLowerCase() === "wheretobuy") return "Where To Buy";
     return str
       .replace("-", " ")
       .replace(/aboutus/i, "About Us")
