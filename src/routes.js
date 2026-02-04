@@ -41,6 +41,7 @@ import AboutUs from "layouts/aboutus";
 import Wireless from "layouts/wireless";
 import Notifications from "layouts/notifications";
 import Products from "layouts/products";
+import LineCard from "layouts/linecard";
 import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 
@@ -66,6 +67,14 @@ const routes = [
   },
   {
     type: "collapse",
+    name: "Wireless Security",
+    key: "wireless",
+    icon: <Icon fontSize="small">receipt_long</Icon>,
+    route: "/wireless",
+    component: <Wireless />,
+  },
+  {
+    type: "collapse",
     name: "Products",
     key: "products",
     icon: <Icon fontSize="small">person</Icon>,
@@ -74,11 +83,11 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Wireless",
-    key: "wireless",
-    icon: <Icon fontSize="small">receipt_long</Icon>,
-    route: "/wireless",
-    component: <Wireless />,
+    name: "Line Card",
+    key: "line-card",
+    icon: <Icon fontSize="small">grid_view</Icon>,
+    route: "/line-card",
+    component: <LineCard />,
   },
 
   {

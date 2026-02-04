@@ -34,7 +34,8 @@ function Breadcrumbs({ icon, title, route, light }) {
   const formatTitle = (str) => {
     return str
       .replace("-", " ")
-      .replace("aboutus", "About Us")
+      .replace(/aboutus/i, "About Us")
+      .replace(/wireless/i, "Wireless Security")
       .replace(/\b\w/g, (char) => char.toUpperCase());
   };
 
