@@ -42,108 +42,79 @@ import PlatformSettings from "layouts/products/components/PlatformSettings";
 import ProductsListData from "layouts/products/data/ProductsListData";
 
 // Images
-import homeDecor1 from "assets/images/home-decor-1.jpg";
-import { useState } from "react";
-import homeDecor2 from "assets/images/home-decor-2.jpg";
-import homeDecor3 from "assets/images/home-decor-3.jpg";
-import homeDecor4 from "assets/images/home-decor-4.jpeg";
-import team1 from "assets/images/team-1.jpg";
-import team2 from "assets/images/team-2.jpg";
-import team3 from "assets/images/team-3.jpg";
-import team4 from "assets/images/team-4.jpg";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
 
 function Overview() {
-  const [search, setSearch] = useState("");
-  // Filter products by name or description
-  const filteredProducts = ProductsListData.filter(
-    (product) =>
-      product.name.toLowerCase().includes(search.toLowerCase()) ||
-      product.description.toLowerCase().includes(search.toLowerCase())
-  );
-
-  // Get all product names for autocomplete
-  const productNames = ProductsListData.map((product) => product.name);
+  // Example product data
+  const products = [
+    {
+      name: "Mini Door/Window Sensor",
+      description: "Wireless sensor for doors and windows. Available in 319/345/433 MHz.",
+      compatibility: "UTC®, Interlogix®, GE®, Honeywell®, 2GIG®, DSC®, Qolsys®",
+    },
+    {
+      name: "TOTAL Window Shock Sensor",
+      description: "Advanced shock sensor for windows. Maximum range and reliability.",
+      compatibility: "All major security panels",
+    },
+    {
+      name: "Combination Smoke/Heat/CO Detector",
+      description: "Multi-threat detector for smoke, heat, and carbon monoxide.",
+      compatibility: "Professional-grade, easy installation",
+    },
+    {
+      name: "PIR Motion Detector",
+      description: "Wall and ceiling mount PIR motion sensors for versatile coverage.",
+      compatibility: "Industry-standard wireless panels",
+    },
+    {
+      name: "Glass Break Sensor",
+      description: "Detects glass breakage for enhanced perimeter security.",
+      compatibility: "Works with leading wireless systems",
+    },
+    {
+      name: "Water Sensor",
+      description: "Wireless water leak detection for life-safety applications.",
+      compatibility: "Easy integration with MaxOut™ systems",
+    },
+    {
+      name: "Keyfob & Panic Button",
+      description: "Remote control and emergency activation for security systems.",
+      compatibility: "All MaxOut™ compatible panels",
+    },
+  ];
 
   return (
     <HomeLayout>
-      <HomeNavbar onSearchChange={setSearch} productNames={productNames} />
-      <MDBox mb={2} />
-      <Header>
-        <MDBox pt={2} px={2} lineHeight={1.25}>
-          <MDTypography variant="h6" fontWeight="medium">
-            Projects
-          </MDTypography>
-          <MDBox mb={1}>
-            <MDTypography variant="button" color="text">
-              Architects design houses
-            </MDTypography>
-          </MDBox>
-        </MDBox>
-        <MDBox p={2}>
-          <Grid container spacing={6}>
-            <Grid item xs={12} md={6} xl={3}>
-              <DefaultProjectCard
-                image={homeDecor1}
-                label="project #2"
-                title="modern"
-                description="As Uber works through a huge amount of internal management turmoil."
-                action={{
-                  type: "internal",
-                  route: "/pages/products/products-overview",
-                  color: "info",
-                  label: "view project",
-                }}
-              />
+      <HomeNavbar />
+      <div style={{ padding: 32 }}>
+        <h1>MaxOut™ Products</h1>
+        <p>
+          Explore our full line of wireless security and life-safety sensors engineered for maximum
+          range, reliability, and seamless compatibility with leading security panels.
+        </p>
+        <Grid container spacing={4}>
+          {products.map((product) => (
+            <Grid item xs={12} sm={6} md={4} key={product.name}>
+              <Card sx={{ minHeight: 180 }}>
+                <CardContent>
+                  <Typography variant="h6" component="div" gutterBottom>
+                    {product.name}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" gutterBottom>
+                    {product.description}
+                  </Typography>
+                  <Typography variant="caption" color="text.secondary">
+                    <b>Compatibility:</b> {product.compatibility}
+                  </Typography>
+                </CardContent>
+              </Card>
             </Grid>
-            <Grid item xs={12} md={6} xl={3}>
-              <DefaultProjectCard
-                image={homeDecor2}
-                label="project #1"
-                title="scandinavian"
-                description="Music is something that everyone has their own specific opinion about."
-                action={{
-                  type: "internal",
-                  route: "/pages/products/products-overview",
-                  color: "info",
-                  label: "view project",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} md={6} xl={3}>
-              <DefaultProjectCard
-                image={homeDecor3}
-                label="project #3"
-                title="minimalist"
-                description="Different people have different taste, and various types of music."
-                action={{
-                  type: "internal",
-                  route: "/pages/products/products-overview",
-                  color: "info",
-                  label: "view project",
-                }}
-              />
-            </Grid>
-            <Grid item xs={12} md={6} xl={3}>
-              <DefaultProjectCard
-                image={homeDecor4}
-                label="project #4"
-                title="gothic"
-                description="Why would anyone pick blue over pink? Pink is obviously a better color."
-                action={{
-                  type: "internal",
-                  route: "/pages/products/products-overview",
-                  color: "info",
-                  label: "view project",
-                }}
-              />
-            </Grid>
-          </Grid>
-        </MDBox>
-        {/* Product search results */}
-        <MDBox mt={4}>
-          <Productslist title="Products" productss={filteredProducts} />
-        </MDBox>
-      </Header>
+          ))}
+        </Grid>
+      </div>
       <Footer />
     </HomeLayout>
   );
