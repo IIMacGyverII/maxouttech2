@@ -1,11 +1,8 @@
 {
   "files": {
-    "main.js": "/maxouttech2/static/js/main.f1439c6d.js",
+    "main.js": "/maxouttech2/static/js/main.1f5c1b26.js",
     "static/media/maxoutlogo2.webp": "/maxouttech2/static/media/maxoutlogo2.a5677a429c367ea10f4b.webp",
     "static/media/pattern-tree.svg": "/maxouttech2/static/media/pattern-tree.431da656681abcdffac51bee04d7f581.svg",
-    "static/media/home-decor-3.jpg": "/maxouttech2/static/media/home-decor-3.74d13fcbd3c631fc7908.jpg",
-    "static/media/home-decor-2.jpg": "/maxouttech2/static/media/home-decor-2.b4e5397c9846645ba275.jpg",
-    "static/media/home-decor-1.jpg": "/maxouttech2/static/media/home-decor-1.05e218fd495ccc65c99d.jpg",
     "static/media/x_rf_apcmb_345_nn_im.pdf": "/maxouttech2/static/media/x_rf_apcmb_345_nn_im.d749368a93b2c4f4e92c.pdf",
     "static/media/bg-sign-in-basic.jpeg": "/maxouttech2/static/media/bg-sign-in-basic.f327db1d0e4b00ba3c81.jpeg",
     "static/media/q_rf_arpir_319_nn_im.pdf": "/maxouttech2/static/media/q_rf_arpir_319_nn_im.f33e16e50ba82e03dcf0.pdf",
@@ -35,7 +32,6 @@
     "static/media/f_rf_rdws_319_nn_im.pdf": "/maxouttech2/static/media/f_rf_rdws_319_nn_im.6afdb77a56909bec3cb6.pdf",
     "static/media/g_rf_rdws_345_nn_-im.pdf": "/maxouttech2/static/media/g_rf_rdws_345_nn_-im.aa5e824606415b418ab7.pdf",
     "static/media/y_rf_water_319_nn_im.pdf": "/maxouttech2/static/media/y_rf_water_319_nn_im.945542b9ad5eed1830de.pdf",
-    "static/media/home-decor-4.jpeg": "/maxouttech2/static/media/home-decor-4.5b448fd339a14695f6aa.jpeg",
     "static/media/visa.png": "/maxouttech2/static/media/visa.71c0d5e9e2aaee42e4c3.png",
     "static/media/mastercard.png": "/maxouttech2/static/media/mastercard.27fca3e7637a9458fb64.png",
     "static/media/team-1.jpg": "/maxouttech2/static/media/team-1.0fd36e0ee93dcfacdef8.jpg",
@@ -58,9 +54,9 @@
     "static/media/logo-atlassian.svg": "/maxouttech2/static/media/logo-atlassian.d92c4f81bb3efbf288b3ef71ce2fbfb0.svg",
     "static/media/logo-asana.svg": "/maxouttech2/static/media/logo-asana.5c9ced4f9006cfb2d4c10f905cf6d310.svg",
     "index.html": "/maxouttech2/index.html",
-    "main.f1439c6d.js.map": "/maxouttech2/static/js/main.f1439c6d.js.map"
+    "main.1f5c1b26.js.map": "/maxouttech2/static/js/main.1f5c1b26.js.map"
   },
   "entrypoints": [
-    "static/js/main.f1439c6d.js"
+    "static/js/main.1f5c1b26.js"
   ]
 }
