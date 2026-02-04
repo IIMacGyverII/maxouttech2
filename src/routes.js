@@ -39,7 +39,6 @@ Coded by www.creative-tim.com
 import Home from "layouts/home";
 import AboutUs from "layouts/aboutus";
 import Wireless from "layouts/wireless";
-import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
 import Products from "layouts/products";
 import SignIn from "layouts/authentication/sign-in";
@@ -81,14 +80,7 @@ const routes = [
     route: "/wireless",
     component: <Wireless />,
   },
-  {
-    type: "collapse",
-    name: "RTL",
-    key: "rtl",
-    icon: <Icon fontSize="small">format_textdirection_r_to_l</Icon>,
-    route: "/rtl",
-    component: <RTL />,
-  },
+
   {
     type: "collapse",
     name: "Notifications",
